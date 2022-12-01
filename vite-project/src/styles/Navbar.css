@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#blobSvg {
+    position: absolute;
+    z-index:-1 ;
+    top:-70%;
+    left:-30%;
+    width:130%;
+    transform: rotate(35deg);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:2rem 4rem 0rem;
+    background: transparent;
+}
+
+.nav__logo-container{
+display:flex;
+  width:120px;
+  height:60px;
+  flex:1;
+}
+ .nav__logo-container img{
+  width:70px;
+  height:70px;
+}
+.nav__logo-container h4{
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 22px;
+    color: #212832;
+}
+
+.nav__links-container{
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    flex:2;
+}
+.nav__links-container a{
+    font-family: 'Google Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #212832;
+}
+
+.nav__links-container div{
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+    margin-right: 1.5rem;
+}
+.nav__links-container button{
+    padding: 0.25rem 0.75rem;
+    border:2px solid #212832;
+    border-radius: 5px;
+    background:transparent;
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212832;
+}
+.toggle{
+    position:relative;
+    width:32px;
+    height:40px;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    /* justify-self: ; */
+}
+.toggle::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:2px;
+    background: #212832;
+    transform: translateY(-10px);
+    transition:all 0.25s;
+    box-shadow:  0 10px 0 #212832;
+}
+.toggle.active::before {
+    box-shadow:  unset;
+    transform: translateY(0px) rotate(45deg);
+}
+.toggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+.toggle::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:2px;
+    background: #212832;
+    transform: translateY(10px);
+    transition:all 0.25s;
+}
+
+
+
+@media (width < 620px){
+    nav{
+        padding: 1rem 2rem;
+    }
+}
+@media (width < 550px){
+    .nav__logo-container img{
+        width:50px;
+        height:50px;
+    }
+    .nav__logo-container h4{
+    font-size: 20px;
+}
+}
+@media (width < 480px){
+    .nav__links-container div{
+     display:none;
+    }
+    .nav__links-container div.activeToggle{
+        position: absolute;
+        top:75%;
+        left:0%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (width < 320px){
+.nav__logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+     nav{
+        padding: 0.5rem 1rem;
+    }
+
+    .nav__logo-container h4 {
+        font-size: 15px;
+    }
+}
+@media (width < 870px) {
+    .nav__links-container aside.activeToggle {
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:50%;
+        left:50%;
+        display: grid;
+        gap:2rem;
+        place-content: center;
+        transform: translate(-50%,-50%);
+    }
+    .nav__links-container aside{
+     display:none;
+    }
+    .nav__links-container div{
+        width:100%;
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+}
