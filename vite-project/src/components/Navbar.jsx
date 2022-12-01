@@ -55,8 +55,8 @@ const Navbar = () => {
         </div>
       </div>
    <div className="toggle" onClick={handleToggleClick}></div>
-    <svg viewBox="0 0 500 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-  <g transform="translate(54.95371627807617, -15.4914398193359375)">
+    <svg viewBox="0 0 350 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" id="blobSvg">
+  <g>
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" style={{stopColor: 'rgb(76, 161, 175)'}}></stop>

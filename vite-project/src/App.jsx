@@ -11,17 +11,19 @@ import Footer from './sections/Footer';
 const App = () => {
   return (
     <div>
+    <div style={{position:'relative',width:'100vw',height:'fit-content'}}>
     <Navbar />
-      <Header />
-      <Services />
-      <Destinations/>
-      <BookATrip/>
-      <Testimonial/>
-      <Brands/>
-      <SubscribeNewsletter />
-      <Footer/>
+    <Header />
     </div>
-  )
+    <Services />
+    <Destinations/>
+    <BookATrip/>
+    <Testimonial/>
+    <Brands/>
+    <SubscribeNewsletter />
+    <Footer/>
+    </div>
+    )
 }
 
 export default App
