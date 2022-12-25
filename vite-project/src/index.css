@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+/* body{
+  overflow:hidden;
+  height:fit-content;
+} */
 a {
   text-decoration: none;
 }
@@ -17,5 +21,17 @@ select{
     /* background-size: 30px; */
  width:50px;  
  appearance: none;
+}
+.header-wrapper{
+position: 'relative';
+ padding:0;
+ height:'fit-content';
+ padding-bottom:10rem;
+}
+@media (width > 1200px){
+  .header-wrapper{
+  padding-inline: 4rem;
+  }
+
 }
 

@@ -11,7 +11,7 @@ import Footer from './sections/Footer';
 const App = () => {
   return (
     <div>
-    <div style={{position:'relative',width:'100vw',height:'fit-content'}}>
+    <div className='header-wrapper'>
     <Navbar />
     <Header />
     </div>

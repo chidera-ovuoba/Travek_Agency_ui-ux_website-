@@ -5,16 +5,17 @@
     width:100%;
     top:0;
     left:0;
+    transform:  translate(56%,-25%)  rotate(30deg);
 }
  g:first-of-type{
-    width:120%;
-    height: 120%;
-    transform:  translate(56%,-25%)  rotate(30deg);
+    width:100%;
+    height: 100%;
 }
 
 .blob{
     width:100%;
-    height:100%;
+    height:50%;
+    background-color: blue;
 }
 nav{
     display: flex;
@@ -22,6 +23,7 @@ nav{
     align-items: flex-end;
     padding:2rem 4rem 0rem;
     background: transparent;
+    overflow:hidden;
 }
 
 .nav__logo-container{
