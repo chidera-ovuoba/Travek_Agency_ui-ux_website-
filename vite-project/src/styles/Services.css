@@ -20,7 +20,7 @@
     color: #5E6282;
 }
 .services__section_cards{
-    width:90%;
+    width:100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }

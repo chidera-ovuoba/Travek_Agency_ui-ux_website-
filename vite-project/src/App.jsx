@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import Navbar from './components/Navbar'
 import Header from './sections/Header';
 import Services from './sections/Services';
@@ -15,6 +16,7 @@ const App = () => {
     <Navbar />
     <Header />
     </div>
+    <div className='App__wrapper'>
     <Services />
     <Destinations/>
     <BookATrip/>
@@ -22,6 +24,7 @@ const App = () => {
     <Brands/>
     <SubscribeNewsletter />
     <Footer/>
+    </div>
     </div>
     )
 }

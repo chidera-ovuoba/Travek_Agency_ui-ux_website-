@@ -39,3 +39,13 @@
 .read-the-docs {
   color: #888;
 } */
+.App__wrapper{
+  width:90%;
+  margin: 0 auto;
+}
+@media (width<= 500px){
+  .App__wrapper{
+    width:100%;
+  }
+   
+}
