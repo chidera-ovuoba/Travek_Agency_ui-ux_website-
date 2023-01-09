@@ -12,28 +12,65 @@
     padding: 2rem;
     transition: all 0.5s;
     background-color: white;
+    isolation: isolate;
 }
-.service__card-container img{
+.service__card-container_image{
+    position: relative;
+
+}
+.service__card-container_image img{
     width:70px;
-    height:60px;
+    height:70px;
 }
 
 .service__card-container h5{
-    font-family: 'Open Sans';
+    font-family: 'Rowdies', cursive;
     font-weight: 600;
-    font-size: 15px;
+    letter-spacing: 0.13em;
+    font-size: 14px;
     line-height: 25px;
-    color: #1E1D4C;
+    color: #399adf;
 }
 .service__card-container p{
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 12px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
     line-height: 20px;
-    color: #5E6282;
+    color: #000;
 }
+.service__card-container_image span{
+  width: 40px;
+  height:40px;
+  right: 6px;
+  z-index: -1;
+  background: #399adf;
+  position: absolute;
+}
+.service__card-wrapper:first-of-type span{
+   right:30px;
+   bottom: 0px;
+   border-radius: 1.2rem 5px 5px 5px;
+}
+.service__card-wrapper:nth-of-type(2) span{
+    left:40px;
+    top: 0px;
+    border-radius: 5px 1.2rem 5px 5px;
+}
+.service__card-wrapper:nth-of-type(3) span{
+    right:40px;
+    bottom: 0px;
+    border-radius:  1.2rem 5px 5px 5px;
+}
+.service__card-wrapper:last-of-type span{
+    right:40px;
+    top: 0px;
+    border-radius:  1.2rem 5px 5px 5px;
+}
+
+
+
 .service__card-wrapper div:last-child{
-    background: purple;
+    background: #399adf;
     width:80px;
     height:80px;
     position: absolute;
@@ -53,4 +90,16 @@
     transition: all 0.5s; 
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     
+}
+@media (width < 700px){
+    .service__card-container h5{
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+}
+
+@media (width < 350px){
+    .service__card-wrapper{
+        padding: 1rem;
+    }
 }

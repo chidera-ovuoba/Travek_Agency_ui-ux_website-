@@ -1,15 +1,15 @@
 .brand__section{
     display: flex;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:1rem;
     align-items: center;
-    justify-content: center;
+    padding: 10rem 2rem 5rem;
+    justify-content: space-around;
 
 }
 .brand__img-container{
     width:15rem;
-    height:10rem;
-    padding: 2rem;   
+    height:11rem;
     background: #FFFFFF;
     border-radius: 10px;
     transition: all 0.5s;

@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/services.css';
 import ServiceCard from '../components/ServiceCard';
-import service_1 from '../assets/Group 48.png'
-import service_2 from '../assets/Group 51.png'
-import service_3 from '../assets/Group 49.png'
-import service_4 from '../assets/Group 50.png'
+import service_1 from '../assets/icons8-satelite-50.png'
+import service_2 from '../assets/icons8-plane-50.png'
+import service_3 from '../assets/icons8-microphone-50.png'
+import service_4 from '../assets/icons8-gear-50.png'
 
 const cardData = [
   {
@@ -37,7 +37,8 @@ const Services = () => {
     <section className='services__section'>
       <div className='services__section_header'>
       <h4>CATEGORY</h4>
-      <h2>We Offer Best Services</h2>
+        <h2>We Offer Best Services</h2>
+        
       </div>
       <div className="services__section_cards">
         {cardData.map((card) => <ServiceCard {...card} key={card.id} />)}

@@ -1,9 +1,9 @@
 import '../styles/Brands.css';
-import Brand_1 from '../assets/image 27.png';
-import Brand_2 from '../assets/image 28.png';
-import Brand_3 from '../assets/image 29.png';
-import Brand_4 from '../assets/image 30.png';
-import Brand_5 from '../assets/image 31.png';
+import Brand_1 from '../assets/Lovepik_com-401695665-catering-logo.png';
+import Brand_2 from '../assets/Lovepik_com-401727089-technology-company-logo.png';
+import Brand_3 from '../assets/预览图_千图网_编号22068298.png';
+import Brand_4 from '../assets/BERRIES COLOR.png';
+import Brand_5 from '../assets/Lovepik_com-401737177-real-estate-building-logo.png';
 
 const BrandsData = [
   {

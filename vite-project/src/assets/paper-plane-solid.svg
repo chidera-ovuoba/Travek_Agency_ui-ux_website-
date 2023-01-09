@@ -17,6 +17,7 @@
     fill="white"
     stroke-width='0'
     font-size='12.5em'
-    style="font-style:italic; font-weight:600; text-transform:uppercase"
+    style="font-style:italic; font-weight:600; text-transform:uppercase;
+    font-family: 'Pacifico', cursive;"
   >premium flight</text>
  </svg>

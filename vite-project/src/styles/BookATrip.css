@@ -1,7 +1,7 @@
 .bookATrip__section{
     display: flex;
     gap: 4rem;
-    padding: 10rem 2rem;
+    padding: 10rem 3rem;
     align-items: center;
     justify-content:center;
 }
@@ -20,14 +20,16 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 54px;
-    color: #14183E;
+    color: #399adf;
 }
 
 .bookATrip__content_header h4 {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
-    color: #5E6282;
+    color: #a15daa;
+    text-transform: uppercase;
+    font-family: 'Acme', sans-serif;
 }
 .bookATrip__image_container{
    width:auto;
@@ -72,13 +74,19 @@
     height:40px;
 }
 .bookATrip__content_main-wrapper article h6{
+    font-family: 'Rowdies', cursive;
     font-weight: 700;
     font-size: 16px;
+    color: #399adf;
+    letter-spacing: 0.13em;
+
 }
 .bookATrip__content_main-wrapper article p{
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 14px;
     width:80%;
+    color:#000;
 }
 
 @media (width <= 1140px ){

@@ -46,12 +46,6 @@ const Navbar = () => {
           </aside>
         <div className={activeToggleState ? 'activeToggle':""}>
         <button className="signup__btn">Sign Up</button>
-        <select name="languages" id="lang" defaultValue='javascript'>
-        <option value="english">EN</option>
-        <option value="spanish">ES</option>
-        <option value="french">FR</option>
-        <option value="Danish">NL</option>
-        </select>
         </div>
       </div>
    <div className="toggle" onClick={handleToggleClick}></div>

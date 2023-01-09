@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/Header.css';
 import BannerImg from '../assets/Image.png';
-import {MdPlayArrow} from 'react-icons/md';
+import {MdPlayArrow,MdCancel} from 'react-icons/md';
 const Header = () => {
+  const [openVideo, setOpenVideo] = useState(false);
+
   return (
     <header>
       <div className="header__content-container">
@@ -12,16 +14,23 @@ const Header = () => {
       <div className="cta__btn-group">
       <button>Find out more</button>
       <div className='play__btn-group'>
-      <div className='play__btn-container_circle'>
+      <div className='play__btn-container_circle' onClick={()=>setOpenVideo(true)} >
       <MdPlayArrow/>
-      </div>
-      <p>Play Demo</p>
-      </div>
+        </div>
+        <p>Play Demo</p>
+        </div>
       </div>
       </div>
       <div className="header__img-container">
         <img src={BannerImg} alt='Banner' />
       </div>
+      {openVideo && 
+        <div className="iframe_youtube">
+        <MdCancel onClick={()=>setOpenVideo(false)} />    
+       <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+       </iframe>
+       </div> 
+      }
     </header>
   )
 }
