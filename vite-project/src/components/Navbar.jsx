@@ -1,29 +1,8 @@
-import React from 'react'
-import { useState } from 'react';
-import travelBuddy from '../assets/pnghut_world-royalty-free-illustration-vector-graphics-travel-logo-air.png';
+import React,{ useState } from 'react'
+import travelBuddy from '../assets/Images/bannerImg.png';
 import '../styles/Navbar.css'
-const navbarData = [
-  {
-    label: 'Destinations',
-    id:'#destinations'
-  },
-  {
-    label: 'Hotels',
-    id:'hotels'
-  },
-  {
-    label: 'Flights',
-    id:'flights'
-  },
-  {
-    label: 'Bookings',
-    id:'#bookings'
-  },
-  {
-    label: 'Login',
-    id: 'login'
-  }
-]
+import { navbarData } from '../assets/data';
+
 const Navbar = () => {
   const [activeToggleState, setActiveToggleState] = useState(false);
 
@@ -33,18 +12,18 @@ const Navbar = () => {
   }
 
   return (
-    <nav>
+    <nav className='flex_between_end'>
       <div className='nav__logo-container'>
         <img src={travelBuddy} alt='travel_buddy'  />
         <h4>Travel Buddy</h4>
       </div>
-      <div className="nav__links-container">
-        <aside className={activeToggleState ? 'activeToggle':""}>
+      <div className="nav__links-container flex_between_end">
+        <aside className={`${activeToggleState ? 'activeToggle':""} flex_between_end`}>
         {navbarData.map(({ label, id }) => (
-          <a className="p__bolder" key={id} href={id.includes('#') ? id :'#' }>{label}</a>
+          <a className="p__bolder" key={label} href={id}>{label}</a>
           ))}
           </aside>
-        <div className={activeToggleState ? 'activeToggle':""}>
+        <div className={`${activeToggleState ? 'activeToggle':""} flex_end_center`}>
         <button className="signup__btn">Sign Up</button>
         </div>
       </div>

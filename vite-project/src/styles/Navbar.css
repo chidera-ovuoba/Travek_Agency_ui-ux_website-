@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     padding:2rem 4rem;
     background: transparent;
-    overflow:hidden;
 }
 
 .nav__logo-container{
-display:flex;
+  display:flex;
   width:120px;
   height:60px;
-  flex:1;
+  flex:0.8;
 }
  .nav__logo-container img{
   width:70px;
@@ -30,15 +25,9 @@ display:flex;
 }
 
 .nav__links-container{
-    display:flex;
-    align-items:flex-end;
-    justify-content: space-between;
     flex:2;
 }
 .nav__links-container aside{
-    display:flex;
-    align-items:flex-end;
-    justify-content: space-between;
     gap:2rem;
     width:61%;
 }
@@ -51,9 +40,6 @@ display:flex;
 
 .nav__links-container div{
     width:fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     gap:2rem;
     margin-right: 1.5rem;
 }
@@ -163,7 +149,7 @@ display:flex;
         font-size: 15px;
     }
 }
-@media (width < 1060px) {
+@media (width < 1100px) {
     .nav__links-container aside.activeToggle {
         position: fixed;
         width:100%;
@@ -172,7 +158,7 @@ display:flex;
         top:50%;
          left:50%;
         display:grid;
-        background-image: url('../assets/vecteezy_vector-illustration-of-a-jet-airplane-flying-in-the-sky_6945501.jpg');
+        background-image: url('../assets/sidebarBackgroundImg.jpg');
         background-size: cover;
         gap:3rem;
         place-content: center;

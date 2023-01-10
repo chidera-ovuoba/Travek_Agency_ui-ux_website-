@@ -1,44 +1,65 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.flex_between_end{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.flex_end_center{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.grid_center{
+    display: grid;
+    place-items: center;
+}
+.grid_start{
+  display: grid;
+  place-items: start;
+}
+.uppercase_Rowdies_blue{
+  text-transform: uppercase;
+    font-family: 'Rowdies', cursive;
+    color: #399adf;
+}
+.capitalize_Acme_purple{
+  text-transform: capitalize;
+    font-family: 'Acme', sans-serif;
+    color: #9c3cb4;
+}
+.philosopher_black{
+  font-family: 'Philosopher', sans-serif;
+    color: #000;
+}
+.Acme_white{
+  font-family: 'Acme', sans-serif;
+  color: #FFFFFF;
+}
+.Acme_black{
+  font-family: 'Acme', sans-serif;
+  color: #000;
+}
+.flex_center{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.full_width-height{
+  width: 100%;
+  height: 100%;
+}
+.fixed_center{
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.absolute_center{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
 .App__wrapper{
   width:90%;
   margin: 0 auto;
