@@ -1,9 +1,6 @@
 .bookATrip__section{
-    display: flex;
     gap: 4rem;
-    padding: 10rem 3rem;
-    align-items: center;
-    justify-content:center;
+    padding: 10rem 4rem;
 }
 .bookATrip__content{
     display: grid;
@@ -36,9 +33,6 @@
    height: auto;
    flex:1; 
    position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 .blurry_background{
     background: #59B1E6;
@@ -61,11 +55,7 @@
     gap:2rem;
 }
 .bookATrip__content_main-wrapper{
-    display: flex;
     gap:1rem;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins';
     line-height: 124.5%;
     color: #5E6282;
 }
@@ -83,10 +73,8 @@
 }
 .bookATrip__content_main-wrapper article p{
     font-weight: 600;
-    font-family: 'Philosopher', sans-serif;
     font-size: 14px;
     width:80%;
-    color:#000;
 }
 
 @media (width <= 1140px ){

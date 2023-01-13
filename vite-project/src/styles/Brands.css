@@ -15,8 +15,6 @@
     transition: all 0.5s;
 }
 .brand__img-container img{
-    width:100%;
-    height:100%;
     filter:grayscale(100%);
     transition: all 0.5s;
 }

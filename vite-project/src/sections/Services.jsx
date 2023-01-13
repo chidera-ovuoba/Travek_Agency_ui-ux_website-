@@ -1,40 +1,12 @@
 import React from 'react'
 import '../styles/services.css';
 import ServiceCard from '../components/ServiceCard';
-import service_1 from '../assets/icons8-satelite-50.png'
-import service_2 from '../assets/icons8-plane-50.png'
-import service_3 from '../assets/icons8-microphone-50.png'
-import service_4 from '../assets/icons8-gear-50.png'
+import { cardData } from '../assets/data';
 
-const cardData = [
-  {
-    id:1,
-    title: 'Calculated Weather',
-    description: 'Built Wicket longer admire do barton vanity itself do in it.',
-    img:service_1
-  },
-  {
-    id:2,
-    title: 'Best Flights',
-    description: 'Engrossed listening. Park gate sell they west hard for the.',
-    img:service_2
-  },
-  {
-    id:3,
-    title: 'Local Events',
-    description: 'Barton vanity itself do in it. Preferd to men it engrossed listening. ',
-    img:service_3
-  },
-  {
-    id:4,
-    title: 'Customization',
-    description: 'We deliver outsourced aviation services formilitary customers',
-    img:service_4
-  },
-]
+
 const Services = () => {
   return (
-    <section className='services__section'>
+    <section className='services__section grid_center'>
       <div className='services__section_header'>
       <h4>CATEGORY</h4>
         <h2>We Offer Best Services</h2>

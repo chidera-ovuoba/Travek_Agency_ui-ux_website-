@@ -1,12 +1,8 @@
 .service__card-wrapper{
-  display: grid;
-  place-items: center;
   padding: 2rem;
   position: relative;
 }
 .service__card-container{
-    display: grid;
-    place-items: center;
     gap:0.5rem;
     border-radius: 20px;
     padding: 2rem;
@@ -32,11 +28,9 @@
     color: #399adf;
 }
 .service__card-container p{
-    font-family: 'Philosopher', sans-serif;
     font-weight: 600;
     font-size: 13px;
     line-height: 20px;
-    color: #000;
 }
 .service__card-container_image span{
   width: 40px;

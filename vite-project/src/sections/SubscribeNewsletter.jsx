@@ -38,17 +38,17 @@ const SubscribeNewsletter = () => {
 
 
   return (
-    <section className='subscribeNewsletter__section'>
+    <section className='subscribeNewsletter__section grid_center' id='newsletter'>
       <div className="subscribeNewsletter__container">
         <h4>Subscribe to get information, latest news and other interesting offers about Cobham</h4>
-        <form className="input__wrapper" ref={formRef} onSubmit={sendEmail}>
+        <form className="input__wrapper flex_center" ref={formRef} onSubmit={sendEmail}>
           <div className='input__container'>
             <MdOutlineMailOutline/>
             <input type="email"  placeholder='Your Email' name='email'/>
           </div>
           <button type='submit' disabled={notificationAnimate}>Subscribe</button>
         </form>
-        <div className="notification__icon" ref={notificationRef}>
+        <div className="notification__icon grid_center" ref={notificationRef}>
           <IoIosSend />
           <MdCancel/>
           <AiOutlineCheck/>

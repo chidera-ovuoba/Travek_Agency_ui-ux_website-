@@ -1,47 +1,22 @@
 import '../styles/Destinations.css';
-import destinationImg_1 from '../assets/pexels-berk-ozdemir-3779816.jpg'
-import destinationImg_2 from '../assets/pexels-louis-1530259.jpg'
-import destinationImg_3 from '../assets/pexels-pixabay-64271.jpg';
-import { FaPaperPlane,FaMoneyBillWave } from 'react-icons/fa';
+import { FaMoneyBillWave } from 'react-icons/fa';
 import { MdAirplanemodeActive ,MdLocationOn} from 'react-icons/md';
-
-const destinationData = [
-  {
-    id:1,
-    title: 'Kyoto, Japan',
-    price: '$5.42k',
-    time:'10 Days Trip',
-    img:destinationImg_1,
-  },
-  {
-    id:2,
-    title: 'Paris, France',
-    price: '$15k',
-    time:'14 Days Trip',
-    img:destinationImg_2
-  },
-  {
-    id:3,
-    title: 'New York, USA',
-    price: '$4.2k',
-    time:"12 Days Trip",
-    img:destinationImg_3
-  },
-]
+import { destinationData } from '../assets/data';
+ 
 
 const Destinations = () => {
  
   return (
-    <section className='destination__section'>
+    <section className='destination__section grid_center' id='destinations'>
       <div className='destination__section_header'>
-      <h4>Top Selling</h4>
+      <h4 className='Acme_white'>Top Selling</h4>
       <h2>Top Destinations </h2>
       </div>
-        <div className="destination__section_cards">
+        <div className="destination__section_cards flex_center">
         {destinationData.map(({id,img,price,title,time}) => <div className='destination__card' key={id}>
-          <img className='destinaton__card_img' src={img} alt={title} />
-          <div className='ribbon'></div>
-            <div className="destination__content">
+          <img className='destinaton__card_img full_width-height' src={img} alt={title} />
+          <div className='ribbon grid_center'></div>
+            <div className="destination__content absolute_center">
                 <p><span><MdLocationOn/></span>{title}</p>
                 <p><span><FaMoneyBillWave/></span>{price}</p>
                 <p><span><MdAirplanemodeActive/></span>{time}</p>

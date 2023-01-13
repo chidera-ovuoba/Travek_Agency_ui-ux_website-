@@ -1,7 +1,5 @@
 .subscribeNewsletter__section{
     padding: 10rem 0rem;
-    display: grid;
-    place-items: center;
 }
 .subscribeNewsletter__container{
     position: relative;
@@ -10,7 +8,7 @@
     height:auto;
     border-radius: 8rem 10px 10px 10px;
     /* background-color: aqua; */
-    background-image: url('../assets/vecteezy_airplane-flying-in-sky-jet-plane-fly-in-clouds-airplanes_11968092.jpg');
+    background-image: url('../assets/Images/newsletterBg.jpg');
     background-size:100% 120%;
     
 }
@@ -27,9 +25,6 @@
 }
 .input__wrapper{
     padding: 3rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap:3rem;
     flex-wrap: wrap;
 }
@@ -62,8 +57,6 @@
     font-size: 20px;
 }
 .input__wrapper button{
-    border: none;
-    outline: none;
     padding: 1.3rem 2.5rem;
     background: linear-gradient(to top, #399adf, #56569b);
      border-radius: 10px;
@@ -79,9 +72,7 @@
     right:-22px;
      background: #399adf;
      padding: 1.3rem;
-     display: grid;
      color: #fff;
-     place-items: center;
      font-size: 60px;
      border-radius: 50%;
      overflow: hidden;
@@ -91,8 +82,8 @@
     position: absolute;
     top:50%;
     left:50%;
-    opacity: 0;
     transform: translate(-50%, -50%);
+    opacity: 0;
     font-size: 0px;
 }
 .notification__icon.message_sent svg:last-of-type{

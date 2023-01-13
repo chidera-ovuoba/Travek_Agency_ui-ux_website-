@@ -30,9 +30,8 @@ select{
  appearance: none;
 }
 .header-wrapper{
- /* width:90%; */
  padding-bottom:10rem;
- background-image: url('../public/assets/undraw_connected_world_wuay (1).png');
+ background-image: url('./assets/Images/headerBackground.png');
  background-size: contain;
 background-repeat: no-repeat;
 }
@@ -63,18 +62,18 @@ background-repeat: no-repeat;
 
 }
 
-@media (width < 800px){
+@media (width < 900px){
      .header-wrapper{
   background-position: 0% 30rem;
   } 
 }
-@media (width < 370px){
+@media (width < 470px){
   .header-wrapper{
-    background-position: 0  40rem;
+    background-position: 0  38rem;
   }
 }
 
-@media (width < 330px){
+@media (width < 340px){
   .header-wrapper{
     background-position: 0  45rem;
   }

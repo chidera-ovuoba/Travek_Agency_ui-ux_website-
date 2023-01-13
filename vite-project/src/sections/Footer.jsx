@@ -1,43 +1,12 @@
 import React from 'react';
-import playStore from '../assets/Play Store.png';
-import googlePlay from '../assets/Google Play.png';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import playStore from '../assets/Images/Play Store.png';
+import googlePlay from '../assets/Images/Google Play.png';
 import '../styles/Footer.css';
+import { footerData,socials } from '../assets/data';
 
-const footerData = [
-  {
-    id: 1,
-    title: 'Company',
-    content:['About','Careers','Mobile']
-   }, 
-  {
-    id: 2,
-    title: 'Contact',
-    content:['Help/FAQ','Press','Affilates']
-   },  
-  {
-    id: 3,
-    title: 'More',
-    content:['Airlinefees','Airline','Low fare tips']
-   }  
-]
-const socials = [
-  {
-    icon: <FaFacebookF />,
-    id:1
-  },
-  {
-    icon: <FaInstagram />,
-    id:2
-  },
-  {
-    icon: <FaTwitter />,
-    id:3
-  },
-]
 const Footer = () => {
   return (
-    <div className='footer__container'>
+    <section className='footer__container grid_center'>
     <div className="footer__wrapper">
         <div className="footer__logo-container">
           <h3>Travel Buddy</h3>
@@ -57,10 +26,10 @@ const Footer = () => {
           ))  
           }
         </div>
-        <div className="footer__socials">
+        <div className="footer__socials grid_center">
           <div className="socials_main">{ 
             socials.map(({ id,icon }) => (
-              <span key={id}>{icon}</span>
+              <span className='grid_center' key={id}>{icon}</span>
           ))
           }</div>
           <p>Discover our app</p>
@@ -71,7 +40,7 @@ const Footer = () => {
         </div>
     </div>
       <span>All rights reserved to @travelbuddy</span>
-    </div>
+    </section>
   )
 }
 

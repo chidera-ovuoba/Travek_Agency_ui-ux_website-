@@ -1,6 +1,4 @@
 .services__section{
-    display: grid;
-    place-items: center;
     gap:3rem;
     padding: 10rem 2rem 15rem;
 }
