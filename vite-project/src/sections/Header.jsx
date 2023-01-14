@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Header.css';
-import BannerImg from '../assets/Image.png';
+import BannerImg from '../assets/Images/bannerImage.png';
 import {MdPlayArrow,MdCancel} from 'react-icons/md';
 const Header = () => {
   const [openVideo, setOpenVideo] = useState(false);

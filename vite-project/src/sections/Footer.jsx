@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="footer__socials grid_center">
           <div className="socials_main">{ 
             socials.map(({ id,icon }) => (
-              <span className='grid_center' key={id}>{icon}</span>
+              <span className='grid_center' key={id}>{icon()}</span>
           ))
           }</div>
           <p>Discover our app</p>

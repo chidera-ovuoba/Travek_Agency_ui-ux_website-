@@ -47,6 +47,7 @@ margin-bottom: 2rem;
     flex:1;
     gap: 2.5rem;
     justify-content: space-between;
+    min-width: 430px;
 }
 .footer__content-main{
     display: flex;
@@ -110,4 +111,9 @@ margin-bottom: 2rem;
 }
 .footer__socials article img{
        width:130px;
+}
+@media (width < 500px ){
+    .footer__content_container{
+        min-width: 200px;
+    }
 }

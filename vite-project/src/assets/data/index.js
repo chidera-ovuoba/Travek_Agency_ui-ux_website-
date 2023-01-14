@@ -206,15 +206,15 @@ export const testimonialData = [
 ]
 export const socials = [
   {
-    icon: <FaFacebookF />,
+    icon: FaFacebookF ,
     id:1
   },
   {
-    icon: <FaInstagram />,
+    icon:FaInstagram ,
     id:2
   },
   {
-    icon: <FaTwitter />,
+    icon:FaTwitter ,
     id:3
   },
 ]

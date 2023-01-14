@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import travelBuddy from '../assets/Images/bannerImg.png';
+import travelBuddy from '../assets/Images/logoImg.png';
 import '../styles/Navbar.css'
 import { navbarData } from '../assets/data';
 
