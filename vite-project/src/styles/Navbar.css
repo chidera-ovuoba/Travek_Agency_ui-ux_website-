@@ -158,8 +158,10 @@ nav{
         top:50%;
          left:50%;
         display:grid;
-        background-image: url('../assets/sidebarBackgroundImg.jpg');
-        background-size: cover;
+        background-image: url('../assets/Images_1/sidebarBackgroundImg.avif');
+        background-size: 200% 100%;
+        background-repeat: no-repeat;
+        background-position: -15rem 0;
         gap:3rem;
         place-content: center;
         transform: translate(-50%,-50%);
@@ -182,4 +184,11 @@ nav{
         display: flex;
     }
 
+}
+
+@media (width < 600px){
+.nav__links-container aside.activeToggle {
+    background-size: 280% 100%;
+    background-position: -10rem 0;
+}
 }

@@ -1,19 +1,19 @@
-import service_1 from '../Images/serviceSatelite.png'
-import service_2 from '../Images/servicePlane.png'
-import service_3 from '../Images/serviceMicrophone.png'
-import service_4 from '../Images/serviceGear.png';
-import destinationImg_1 from '../Images/Japan.jpg'
-import destinationImg_2 from '../Images/NewYork.jpg'
-import destinationImg_3 from '../Images/Paris.jpg';
-import contentImage_1 from '../Images/bookATripContentImg_1.png'
-import contentImage_2 from '../Images/bookATripContentImg_2.png'
-import contentImage_3 from '../Images/bookATripContentImg_3.png'
-import testimonial__1 from '../Images/ec98824ea2dacb618e95f750be66e52b.png';
-import Brand_1 from '../Images/brand_1.png';
-import Brand_2 from '../Images/brand_2.png';
-import Brand_3 from '../Images/brand_3.png';
-import Brand_4 from '../Images/brand_4.png';
-import Brand_5 from '../Images/brand_5.png';
+import service_1 from '../Images_1/serviceSatelite.webp'
+import service_2 from '../Images_1/servicePlane.webp'
+import service_3 from '../Images_1/serviceMicrophone.webp'
+import service_4 from '../Images_1/serviceGear.webp';
+import destinationImg_1 from '../Images_1/Japan.webp'
+import destinationImg_2 from '../Images_1/NewYork.webp'
+import destinationImg_3 from '../Images_1/Paris.webp';
+import contentImage_1 from '../Images_1/bookATripContentImg_1.webp'
+import contentImage_2 from '../Images_1/bookATripContentImg_2.webp'
+import contentImage_3 from '../Images_1/bookATripContentImg_3.webp'
+import testimonial__1 from '../Images_1/ec98824ea2dacb618e95f750be66e52b.webp';
+import Brand_1 from '../Images_1/brand_1.webp';
+import Brand_2 from '../Images_1/brand_2.webp';
+import Brand_3 from '../Images_1/brand_3.webp';
+import Brand_4 from '../Images_1/brand_4.webp';
+import Brand_5 from '../Images_1/brand_5.webp';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 

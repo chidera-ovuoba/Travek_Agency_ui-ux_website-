@@ -80,7 +80,7 @@
 }
 
 .ribbon:before{
-    content:url('../assets/paper-plane-solid.svg');
+    content:url('../assets/Images_1/paper-plane.svg');
     position: absolute;
     width:318px;
     height:60px;

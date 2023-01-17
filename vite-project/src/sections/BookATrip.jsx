@@ -1,5 +1,5 @@
 import React from 'react';
-import bookATripImage from '../assets/Images/bookATripImageBackground.png';
+import bookATripImage from '../assets/Images_1/bookATripImageBackground.webp';
 import '../styles/BookATrip.css';
 import { BookATripContentData } from '../assets/data';
 

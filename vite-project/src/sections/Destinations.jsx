@@ -14,7 +14,7 @@ const Destinations = () => {
       </div>
         <div className="destination__section_cards flex_center">
         {destinationData.map(({id,img,price,title,time}) => <div className='destination__card' key={id}>
-          <img className='destinaton__card_img full_width-height' src={img} alt={title} />
+          <img className='destinaton__card_img full_width-height' src={img} alt={title} width='100%' height='100%' />
           <div className='ribbon grid_center'></div>
             <div className="destination__content absolute_center">
                 <p><span><MdLocationOn/></span>{title}</p>

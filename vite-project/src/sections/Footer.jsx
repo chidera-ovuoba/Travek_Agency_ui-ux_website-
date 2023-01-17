@@ -1,6 +1,6 @@
 import React from 'react';
-import playStore from '../assets/Images/Play Store.png';
-import googlePlay from '../assets/Images/Google Play.png';
+import playStore from '../assets/Images_1/Play Store.webp';
+import googlePlay from '../assets/Images_1/Google Play.webp';
 import '../styles/Footer.css';
 import { footerData,socials } from '../assets/data';
 

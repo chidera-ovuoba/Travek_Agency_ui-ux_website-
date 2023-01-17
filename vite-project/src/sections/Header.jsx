@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import '../styles/Header.css';
-import BannerImg from '../assets/Images/bannerImage.png';
+import BannerImg from '../assets/Images_1/bannerImage1.webp';
 import {MdPlayArrow,MdCancel} from 'react-icons/md';
 const Header = () => {
   const [openVideo, setOpenVideo] = useState(false);
-
+  
   return (
     <header className='grid_center'>
       <div className="header__content-container grid_start">
@@ -22,7 +22,7 @@ const Header = () => {
       </div>
       </div>
       <div className="header__img-container">
-        <img src={BannerImg} alt='Banner' />
+        <img src={BannerImg} alt='Banner'  />
       </div>
       {openVideo && 
         <div className="iframe_youtube full_width-height grid_center fixed_center">
