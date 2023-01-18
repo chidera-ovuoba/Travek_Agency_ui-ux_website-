@@ -4,9 +4,11 @@ import BannerImg from '../assets/Images_1/bannerImage1.webp';
 import {MdPlayArrow,MdCancel} from 'react-icons/md';
 const Header = () => {
   const [openVideo, setOpenVideo] = useState(false);
+
+     !openVideo ? document.querySelector('body').style.overflowY='scroll':document.querySelector('body').style.overflowY='hidden'
   
   return (
-    <header className='grid_center'>
+    <header className='grid_center' id='home'>
       <div className="header__content-container grid_start">
       <h5 className='uppercase_Rowdies_blue'>Best Destinations around the world</h5>
       <h1 className='capitalize_Acme_purple'>Travel, enjoy and live a new and full life</h1>
@@ -27,7 +29,7 @@ const Header = () => {
       {openVideo && 
         <div className="iframe_youtube full_width-height grid_center fixed_center">
         <MdCancel onClick={()=>setOpenVideo(false)} />    
-       <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/r1GuB_O1T48">
        </iframe>
        </div> 
       }

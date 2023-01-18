@@ -86,7 +86,7 @@ background: linear-gradient(to right, #399adf, #5d5daa);
 }
 .iframe_youtube iframe{
     width:90%;
-    height:60%;
+    height:80%;
     border: none;
 }
 @media (width < 900px){

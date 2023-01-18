@@ -6,9 +6,15 @@ import { navbarData } from '../assets/data';
 const Navbar = () => {
   const [activeToggleState, setActiveToggleState] = useState(false);
 
+  !activeToggleState ? document.querySelector('body').style.overflowY='scroll':document.querySelector('body').style.overflowY='hidden'
+
   const handleToggleClick = (e) => {
-    e.target.classList.toggle('active');
+    e.target.classList.toggle('active',);
     setActiveToggleState((prev) => !prev);
+  }
+  const handleLinkClick = () => {
+    setActiveToggleState(false);
+    document.querySelector('.toggle').classList.remove('active');
   }
 
   return (
@@ -20,7 +26,7 @@ const Navbar = () => {
       <div className="nav__links-container flex_between_end">
         <aside className={`${activeToggleState ? 'activeToggle':""} flex_between_end`}>
         {navbarData.map(({ label, id }) => (
-          <a className="p__bolder" key={label} href={id}>{label}</a>
+          <a className="p__bolder" key={label} href={id} onClick={handleLinkClick}>{label}</a>
           ))}
           </aside>
         <div className={`${activeToggleState ? 'activeToggle':""} flex_end_center`}>

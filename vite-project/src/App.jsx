@@ -11,7 +11,7 @@ import SubscribeNewsletter from './sections/SubscribeNewsletter';
 import Footer from './sections/Footer';
 const App = () => {
   return (
-    <div>
+    <div style={{background:'#fff'}}>
     <div className='header-wrapper'>
     <Navbar />
     <Header />

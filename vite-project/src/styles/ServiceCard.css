@@ -1,6 +1,7 @@
 .service__card-wrapper{
   padding: 2rem;
   position: relative;
+  isolation: isolate;
 }
 .service__card-container{
     gap:0.5rem;
@@ -8,7 +9,6 @@
     padding: 2rem;
     transition: all 0.5s;
     background-color: white;
-    isolation: isolate;
 }
 .service__card-container_image{
     position: relative;

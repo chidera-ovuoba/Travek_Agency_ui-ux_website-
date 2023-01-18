@@ -109,7 +109,7 @@
 }
 .notification__icon.message_sent{
     transition: all 0.6s ease-in 0.6s ;
-    background: rgba(106, 253, 38, 0.897);
+    background: rgba(106, 253, 38);
 }
  @media (width <= 600px){
         .subscribeNewsletter__container{

@@ -6,7 +6,7 @@ import { cardData } from '../assets/data';
 
 const Services = () => {
   return (
-    <section className='services__section grid_center'>
+    <section className='services__section grid_center' id='services'>
       <div className='services__section_header'>
       <h4>CATEGORY</h4>
         <h2>We Offer Best Services</h2>

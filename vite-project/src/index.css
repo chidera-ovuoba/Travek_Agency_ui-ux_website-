@@ -5,7 +5,12 @@
   padding: 0;
   font-family: 'Sansita Swashed', cursive;
 }
-
+body{
+  max-width: 2000px;
+  background-color: black;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -51,6 +56,29 @@ background-repeat: no-repeat;
   .header-wrapper{
   padding-inline: 4rem;
   }
+
+}
+@media (width > 2030px){
+  .custom-shape-divider-top-1673115049 {
+      position: absolute;
+      top: -12.3rem;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+  
+    .custom-shape-divider-top-1673115039 {
+      position: absolute;
+      bottom: -12.3rem;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg) scaleY(-1);
+    }
 
 }
 
