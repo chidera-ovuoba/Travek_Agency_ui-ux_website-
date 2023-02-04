@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/services.css';
+import '../styles/Services.css';
 import ServiceCard from '../components/ServiceCard';
 import { cardData } from '../assets/data';
 
