@@ -8,7 +8,7 @@ import destinationImg_3 from '../Images_1/Paris.webp';
 import contentImage_1 from '../Images_1/bookATripContentImg_1.webp'
 import contentImage_2 from '../Images_1/bookATripContentImg_2.webp'
 import contentImage_3 from '../Images_1/bookATripContentImg_3.webp'
-import testimonial__1 from '../Images_1/ec98824ea2dacb618e95f750be66e52b.webp';
+import testimonial__1 from '../Images_1/people02.png';
 import Brand_1 from '../Images_1/brand_1.webp';
 import Brand_2 from '../Images_1/brand_2.webp';
 import Brand_3 from '../Images_1/brand_3.webp';
